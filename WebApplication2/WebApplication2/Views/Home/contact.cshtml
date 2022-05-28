@@ -1,0 +1,57 @@
+﻿@model  WebApplication2.Models.user
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="~/css/contact.css" asp-append-version="true" />
+    </head>
+    
+
+<body>
+<div class="k">
+        
+    <div id="a">
+        <div class="bb">
+            <div style="text-align:center">
+              <h1><u>Contact With Us</u></h1>
+            </div>
+            <div class="cc">
+
+              <div class="dd">
+                <form action="Feedback">
+                    <div class="e">
+                        <div asp-validation-summary="ModelOnly"></div>
+
+                   <div id=" inputContainer">
+                        <input asp-for="cname" placeholder="Name" /><br />
+                        <span asp-validation-for="cname"></span>
+                    </div>
+                       
+<div id=" inputContainer">
+                        <input asp-for="cphone" placeholder="Phone" /><br />
+                        <span asp-validation-for="cphone"></span>
+                    </div>
+                     <div id=" inputContainer">
+                        <input asp-for="cmail" placeholder="Email" /><br />
+                        <span asp-validation-for="cmail"></span>
+                    </div>
+                <div id="inputContainer">
+                <input asp-for="feedback" placeholder="Enter your Feedback" /><br />
+                <span asp-validation-for="feedback"></span>
+            </div>
+            <center>
+            <div class="clearfix">
+                <button asp-area="" asp-controller="Home" asp-action="contact"  type="submit" value="Sign up" id="sbmt" />Send FeedBack<br />
+                  </div>
+               </center>
+                </div>
+                    </form>
+                          </div>
+                                </div>
+                                </div>
+                                </div>
+                               </div>
+                                
+           
+            <partial name="_par" />
+                                </body>
+                                </html>

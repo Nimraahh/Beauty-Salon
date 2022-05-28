@@ -1,0 +1,9 @@
+﻿body {
+    background-image: url("/privacy.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p{
+    font-weight:bold;
+}

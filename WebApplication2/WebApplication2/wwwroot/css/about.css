@@ -1,0 +1,29 @@
+﻿body {
+    background-image: url("/about.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+p{
+    font-weight:bold;
+}
+.submit1 {
+    width: 20%;
+   
+    margin: .5% 0 .5% 0;
+    display: inline-block;
+    border: 1px solid black;
+    background: #f1f1f1;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    align-content:center;
+    vertical-align:central;
+}
+#submit1:visited {
+    color: black;
+}
+
+#submit1:hover {
+    color: gray;
+}

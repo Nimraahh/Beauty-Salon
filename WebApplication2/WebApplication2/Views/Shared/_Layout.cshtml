@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hair and Beauty Salon</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="~/WebApplication2.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/96f4278149.js" crossorigin="anonymous"></script>
+    <style>
+a {
+    color:black;
+  text-decoration: none;
+  
+  font-weight:bold;
+   
+}
+a:hover{
+    color:black
+}
+
+
+#u{
+    position: relative;
+    float:right;
+}
+#f
+{
+    margin-left:5%;
+    margin-right:5%;
+}
+#line
+{
+    color:black;
+}
+header{
+    margin-top:1%;
+    margin-bottom:2%;
+}
+</style>
+</head>
+<body>
+    <center>
+    
+    <header>
+       
+        @RenderSection("s1",required:false)
+        <a href="/home/Index"> Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="/Login/Login"> Login &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="/SignUp/SignUp"> SignUp &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="/products/products"> Products &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="/home/about"> About Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <a href="/home/contact"> Contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+       
+    </header>
+    </center>
+    
+
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer id="f">
+        <hr id="line">
+        <div class="container">
+            &copy; 2022 - Hair and Beauty Salon - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        
+        <p id="u">
+  <i class="fab fa-facebook-f"></i>&nbsp;&nbsp;
+  <i class="fab fa-twitter"></i>&nbsp;&nbsp;
+  <i class="fab fa-google-plus-g"></i>&nbsp;&nbsp;
+  <i class="fab fa-linkedin-in"></i>&nbsp;&nbsp;
+</p>
+</div>
+    </footer >*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

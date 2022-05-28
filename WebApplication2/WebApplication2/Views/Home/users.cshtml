@@ -1,0 +1,51 @@
+﻿@model List<WebApplication2.Models.user>
+@{
+    ViewData["Title"] = "Users";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="~/css/users.css" asp-append-version="true" />
+    </head>
+    
+        <body>
+        <h2>Registered Users of our Beauty Salon</h2>
+<center>
+<table border="1" id="tab">
+    <thead>
+        <tr>
+            <th>ID   </th>
+            <th>UserName   </th>
+            <th>Password   </th>
+            <th>Name   </th>
+            <th>Email   </th>
+            <th>City   </th>
+            <th>Phone   </th>
+        </tr>
+    </thead>
+    <tbody id="a">
+
+        @foreach(WebApplication2.Models.user user in Model)
+        {
+
+            <tr>
+                <td>   @user.Id       </td>
+                <td>   @user.userName       </td>
+                <td>   @user.password       </td>
+                <td>   @user.Name       </td>
+                <td>   @user.mail       </td>
+                <td>   @user.city       </td>
+                <td>   @user.phone       </td>
+                
+            </tr>
+
+        }
+
+
+    </tbody>
+</table>
+</center>
+<partial name="_par" />
+</body>
+</html>

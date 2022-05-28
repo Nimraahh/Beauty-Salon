@@ -1,0 +1,24 @@
+﻿@{
+    
+    ViewData["Title"] = "Home";
+}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    </head>
+<body>
+<div class="text-center">
+    @section s1{
+    <h1 id="he">The Salon!</h1>
+    }
+    
+    <div>
+    <img src="~/index.jpg"width="100%"height="500" />
+    </div>
+    <a href="/home/users"> Click here to view all of our Registered Users. </a>
+    
+</div>
+<partial name="_par" />
+</body>
+</html>

@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "SignUp";
+}
+@model WebApplication2.Models.user
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="~/css/signup.css" asp-append-version="true" />
+    </head>
+
+<body>
+    
+      <center>
+                <h3>Sign Up to our Services</h3>
+                
+                <form method="post" action="/SignUp/SignUp">
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <div id="inputContainer">
+                        <input asp-for="userName" placeholder="Username" /><br />
+                        <span asp-validation-for="userName"></span>
+                    </div>
+                    <div id=" inputContainer">
+                        <input asp-for="password" placeholder="Password" /><br />
+                        <span asp-validation-for="password"></span>
+                    </div>
+                    <div id=" inputContainer">
+                        <input asp-for="Name" placeholder="Name" /><br />
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div id=" inputContainer">
+                        <input asp-for="mail" placeholder="Email" /><br />
+                        <span asp-validation-for="mail"></span>
+                    </div>
+<div id=" inputContainer">
+                        <input asp-for="phone" placeholder="Phone" /><br />
+                        <span asp-validation-for="phone"></span>
+                    </div>
+<div id=" inputContainer">
+                        <input asp-for="city" placeholder="City" /><br />
+                        <span asp-validation-for="city"></span>
+                    </div>
+                    <div class="clearfix">
+                        <input type="submit" value="Sign up" id="sbmt" /><br />
+                        </div>
+                </form>
+                </center>
+           
+    </body>
+   
+    <partial name="_par" />
+    </html>
+
+
+
+
+
+                
+                
+                
+                
+                
+                

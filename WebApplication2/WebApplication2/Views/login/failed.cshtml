@@ -1,0 +1,36 @@
+﻿
+@{
+   
+    ViewData["Title"] = "Login Failed";
+}
+
+@model  WebApplication2.Models.user
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="~/css/lfail.css" asp-append-version="true" />
+    </head>
+    
+
+<body>
+    
+  
+       <center>
+                <h3 id="Login">Login</h3>
+                <form method="post" action="/Login/Login">
+                    <div asp-validation-summary="ModelOnly"></div>
+                    
+                <input asp-for="userName" class ="i" placeholder="Username" /><br />
+                <span asp-validation-for="userName"></span><br />
+                <input asp-for="password" class ="i" placeholder="Password" /><br />
+                <span asp-validation-for="password"></span><br />
+<p id="link">Try Again...!</p>
+                <input type="submit" value="Login" class="submit1" />
+
+                <a class="submit1" href="/SignUp/SignUp">Sign Up</a>
+                </form>
+           </center>
+           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+           <partial name="_par" />
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿body {
+    background-image: url("/sfail.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+input {
+    width: 40%;
+    padding: 1%;
+    margin: .5% 0 .5% 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+    input:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+#sbmt {
+    width: 15%;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+h3 {
+    color: rebeccapurple;
+}

@@ -1,0 +1,55 @@
+﻿body {
+    background-image: url("/probg.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.h {
+    font-family: sans-serif;
+    margin-top:1.5%;
+}
+
+    .h:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+.i {
+    float: right;
+    
+    width: 28%;
+    padding: 0 10px;
+}
+
+
+
+.j {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(20, 20, 20, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+}
+
+.k {
+    width: 50%;
+}
+
+.l {
+    display: grid;
+    align-content: center;
+    
+    background-color: white;
+}
+
+.z {
+    width: 85%;
+    background-size: cover;
+    
+    align-content:center;
+}
+h1{
+    align-content:center;
+}
