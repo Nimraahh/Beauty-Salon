@@ -1,0 +1,51 @@
+﻿body {
+    background-image: url("/condibg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+
+.h {
+    font-family: sans-serif;
+    margin-top: 1.5%;
+}
+
+
+
+.i {
+    width: 65%;
+    padding: 0 10px;
+}
+
+
+
+.j {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(20, 20, 20, 0.2);
+    padding: 5%;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+}
+
+.k {
+    width: 100%;
+    margin-bottom: 3%;
+    border-radius: 5%;
+}
+
+.z {
+    width: 85%;
+    background-size: cover;
+    align-content: center;
+}
+
+.l {
+    display: grid;
+    align-content: center;
+    background-color: lightgrey;
+    width: 70%;
+    font-family: 'Brush Script MT', cursive;
+    border-radius: 3%;
+}

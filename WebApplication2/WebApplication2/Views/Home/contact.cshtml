@@ -3,17 +3,19 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="~/css/contact.css" asp-append-version="true" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     
 
 <body>
-<div class="k">
+
         
     <div id="a">
-        <div class="bb">
+        
             <div style="text-align:center">
-              <h1><u>Contact With Us</u></h1>
+              <h2><u>Contact With Us</u></h2>
             </div>
+            <center>
             <div class="cc">
 
               <div class="dd">
@@ -38,18 +40,19 @@
                 <input asp-for="feedback" placeholder="Enter your Feedback" /><br />
                 <span asp-validation-for="feedback"></span>
             </div>
-            <center>
+           
             <div class="clearfix">
                 <button asp-area="" asp-controller="Home" asp-action="contact"  type="submit" value="Sign up" id="sbmt" />Send FeedBack<br />
                   </div>
-               </center>
+               
                 </div>
                     </form>
                           </div>
                                 </div>
+                                </center>
                                 </div>
-                                </div>
-                               </div>
+                                
+                               
                                 
            
             <partial name="_par" />

@@ -15,23 +15,24 @@ namespace WebApplication2.Controllers
         public ViewResult Login(user u)
         {
             data d = new data();
-            //if(ModelState.IsValid)
+
+            //if (ModelState.IsValid)
             //{
-                if(d.SearchUser(u) == true)
+                if (d.SearchUser(u) == true)
                 {
                     return View("Views/Home/Index.cshtml");
                 }
                 else
                 {
-                    return View("failed");
+                    return View("Views/login/failed.cshtml");
                 }
             //}
             //else
             //{
             //    ModelState.AddModelError(string.Empty, "Invalid Credentials");
-            //    return View("failed");
+            //    return View("Views/login/failed.cshtml");
             //}
-            
+
         }
     }
 }

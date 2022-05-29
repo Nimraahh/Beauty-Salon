@@ -3,15 +3,19 @@ namespace WebApplication2.Models
 {
     public class user
     {
-        
+       
+
+
         public int Id { get; set; }
         [Required(ErrorMessage ="Please enter your name")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Please enter your username")]
+       [Required(ErrorMessage = "Please enter your username")]
         public string userName { get; set; }
         [Required(ErrorMessage = "Please enter your password")]
         public string password { get; set; }
         [Required(ErrorMessage = "Please enter your email")]
+        [EmailAddress]
+        [RegularExpression(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$", ErrorMessage = "Invalid Email")]
         public string mail { get; set; }
         [Required(ErrorMessage = "Please enter your phone number")]
         public string phone { get; set; }
@@ -21,6 +25,8 @@ namespace WebApplication2.Models
         [Required(ErrorMessage = "Please enter your Name")]
         public string cname { get; set; }
         [Required(ErrorMessage = "Please enter your Email")]
+        //[EmailAddress]
+        //[RegularExpression(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$", ErrorMessage = "Invalid Email")]
         public string cmail { get; set; }
         [Required(ErrorMessage = "Please enter your Phone")]
         public string cphone { get; set; }

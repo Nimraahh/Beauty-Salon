@@ -4,13 +4,16 @@ namespace WebApplication2.Controllers
 {
     public class productsController : Controller
     {
-        public IActionResult products()
+        public ActionResult products()
         {
             return View();
         }
-        public IActionResult p1()
+        public ActionResult nails()
         {
+
+
             return View();
+
         }
     }
 }

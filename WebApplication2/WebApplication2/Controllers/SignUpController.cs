@@ -14,25 +14,27 @@ namespace WebApplication2.Controllers
         public ViewResult SignUp(user u)
         {
             data d = new data();
+            bool ans = d.AddUser(u);
             //if (ModelState.IsValid)
             //{
-                if (d.AddUser(u) == true)
+                if (ans == true)
                 {
                     return View("Views/Home/Index.cshtml");
                 }
                 else
                 {
-                    return View("supfailed");
+                    return View("Views/SignUp/supfailed.cshtml");
+                   // return View();
                 }
             //}
             //else
             //{
-            //    ModelState.AddModelError(string.Empty, "Invalid Credentials");
-            //    return View("supfailed");
+            //   // ModelState.AddModelError(string.Empty, "Invalid Credentials");
+            //    return View();
             //}
-            
-            
-           
+
+
+
         }
     }
 }

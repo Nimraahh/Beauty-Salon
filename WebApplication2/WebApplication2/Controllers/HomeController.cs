@@ -10,7 +10,7 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
-
+        
         public ActionResult users()
         {
             data d = new data();
@@ -33,6 +33,7 @@ namespace WebApplication2.Controllers
             return View();
 
         }
+        
         [HttpGet]
         public ActionResult contact()
         {
